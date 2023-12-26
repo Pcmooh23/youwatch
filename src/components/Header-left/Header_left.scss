@@ -1,0 +1,57 @@
+.left-section {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 25px;
+    .menu-button {
+        padding: 8px 8px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        background-color: white;
+        margin-right: 12px;
+        margin-left: 5px;
+        cursor: pointer;
+        .menu-icon {
+            stroke-width: 1;
+            color: black;
+            height: 25px;
+            width: 25px;
+        }
+        &:hover {
+            background-color: rgb(230, 230, 230);
+        }
+    }
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+        .you-logo {
+            height: 30px;
+            margin-right: 2px;
+        }
+        .site-name {
+            font-size: 23px;
+        }
+    }
+    &.hide-section {
+      display: none;
+    }
+    &.dark-mode {
+        .menu-button {
+            background-color: black;
+            .menu-icon {
+                color: white;
+            }
+            a {
+                color: white !important;
+           
+                
+            }
+        }
+    }
+}
+

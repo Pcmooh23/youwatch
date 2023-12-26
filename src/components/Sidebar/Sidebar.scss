@@ -1,0 +1,308 @@
+.mini-container { 
+  width: 80px;
+  .sidebar-mini {
+    display: flex;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+    display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-left: 0.25rem;
+    margin-right: 5px;
+    margin-top: 65px;
+    .home-icon {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2px;
+        padding: 12px 20px 5px 20px;
+        border-radius: 10px;
+        
+        &:hover {
+          background-color: #dbdbdb;
+          cursor: pointer;
+        }
+        .image {
+          stroke-width: 1;
+          height: 25px;
+          width: 25px;
+        }
+        p {
+          font-size: 9px;
+        }
+    }
+    .shorts-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2px;
+        padding: 12px 18px 5px 18px;
+        border-radius: 10px;
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+            background-color: #dbdbdb;
+            cursor: pointer;
+        }
+        .image {
+          stroke-width: 1;
+            height: 25px;
+            width: 25px;
+        }
+        p {
+            font-size: 9px;
+        }
+    }
+    .sub-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2px;
+        padding: 12px 3px 5px 3px;
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        background-color: transparent;
+        &:hover{
+          background-color: #dbdbdb;
+          cursor: pointer;
+        }
+        .image {
+          stroke-width: 1;
+          height: 25px;
+          width: 25px;
+        }
+        p {
+          font-size: 9px;
+        }
+    }
+    .you-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2px;
+        padding: 12px 20px 5px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: transparent;
+        &:hover {
+          background-color: #dbdbdb;
+          cursor: pointer;
+        }
+        .image {
+          stroke-width: 1;
+          height: 25px;
+          width: 25px;
+        }
+        p {
+          font-size: 9px;
+        }
+    }
+    .active {
+      font-weight: bold;
+    }
+  }
+}
+  
+.sidebar-full {
+  display: none;
+}
+  
+.visible  {
+  .sidebar-mini {
+    display: none;
+  }
+  .sidebar-full {
+    z-index: 25;
+    background-color: white;
+    display: block;
+    position: sticky; 
+    overflow: auto;
+    width: 13rem; 
+    margin-top: 68px;
+    bottom: 0; 
+    height: 88vh;
+    overflow-y: auto;
+    padding-bottom: 1rem; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    .sidebar-header {
+      padding-left: 10px;
+      align-items: center;
+      flex-shrink: 0;
+      position: fixed;
+      width: 13.4rem;
+      margin-left: -10px;
+      background-color: white;
+      z-index: 10;
+      display: none;
+
+    }
+    .large-buttons {
+      position: relative;
+      .large-side-button {
+        margin-right: 10px;
+        border: none;
+        padding: 0px 10px;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        height: 40px;
+        cursor: pointer;
+        &:not(.active):hover {
+          background-color: rgb(242, 242, 242);
+        }
+        .icon {
+          stroke-width: 1;
+          margin-right: 15px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 15px;
+        }
+        .name {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+      }
+      .active {
+        background-color: rgb(242, 242, 242);
+        font-weight: bold;
+        color: black;
+        &:hover {
+          background-color: rgb(225, 225, 225);
+        }
+      }
+    }
+    .boogle {
+      margin-left: 10px;
+      .end-details {
+        font-size: 13px;
+        color: rgb(97, 97, 97);
+        font-weight: bold;
+      }
+      .llc {
+        font-size: 11px;
+        font-weight: bold;
+        color: rgb(140, 140, 140);
+      }
+    }
+  }
+}
+  
+.dark-mode {
+  .mini-container{
+    .sidebar-mini {
+      button {
+        .image {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+        &:hover {
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .sidebar-full {
+    background-color: black;
+    .sidebar-header {
+      background-color: black;
+      .menu {
+        .menu-icon {
+          color: white;
+        }
+      }
+      a {
+        color: white;
+      }
+    }
+    .large-buttons {
+      .large-side-button {
+        .icon {
+          color: white;
+        }
+        .name {
+          color: white;
+        }
+      &:not(.active):hover {
+        background-color: transparent;
+      }
+      }
+      .active {
+        background-color: #272727;
+        &:hover {
+          background-color: #272727;
+        }
+      }
+    }
+  }
+}
+  
+.shadow-overlay {
+  display: none;
+  @media screen and (max-width: 1300px) {
+    display: block;
+    position: fixed;
+    top: 0;    
+    right: 0;     
+    bottom: 0;   
+    left: 0; 
+    background-color: black;
+    opacity: 0.5;
+    z-index: 20;
+  }
+}
+  
+@media screen and (max-width: 1300px) {
+  .visible {
+    .sidebar-full {
+      position: absolute;
+      top: -70px;
+  
+      height: 100vh;
+      .sidebar-header {
+        display: flex;
+      }
+      .large-buttons {
+        margin-top: 70px;
+      }
+      .boogle {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mini-container {
+    display: none;
+
+  }
+}

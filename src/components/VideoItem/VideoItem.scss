@@ -1,0 +1,408 @@
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  &:hover .thumbnail-image {
+    border-radius: 0; 
+  }
+
+  &:hover .thumbnail-vid {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  &.dark-mode {
+    .vid-info {
+      .vid-text{
+        .vid-title {
+          color: white;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 2178px) {
+      &.Madridista {
+        margin-top: 20px;
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 2147px) {
+      &.cristiano {
+        margin-top: 20px;
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1991px) {
+      &.talkingtech {
+        margin-top: 20px;
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1806px) {
+      &.boats {
+        margin-top: 20px;
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1805px) {
+      &.boats {
+        &.sidebar-is-full {
+          margin-top: -20px;
+        }
+      }
+      &.lastofus {
+        &.sidebar-is-full {
+          margin-top: -20px;
+        }
+      }
+    }
+  @media screen and (max-width: 1804px) {
+      &.machine {
+        margin-top: 20px;
+      }
+      &.cristiano { 
+        &.sidebar-is-full {
+          margin-top: 20px;
+        }
+      }
+    }
+  @media screen and (max-width: 1782px) {
+      &.machine { 
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1713px) {
+      &.jschanges {
+        margin-top: 20px;
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1665px) {
+      &.talkingtech {
+        &.sidebar-is-full {
+          margin-top: 20px;
+        }
+      }
+    }
+  @media screen and (max-width: 1584px) {
+      &.whitebeard {
+        margin-top: 20px;
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1526px) {
+      &.boats {
+        &.sidebar-is-full {
+          margin-top: 0px;
+        }
+      }
+    }
+  @media screen and (max-width: 1524px) {
+      &.machine {
+        &.sidebar-is-full {
+          margin-top: 20px;
+        }
+      }
+    }
+  @media screen and (max-width: 1503px) {
+      &.lastofus {
+        margin-top: 20px;
+      }
+    }
+  @media screen and (max-width: 1456px) {
+      &.jschanges {
+        &.sidebar-is-full {
+          margin-top: 20px;
+        }
+      }
+    }
+  @media screen and (max-width: 1388px) {
+    &.cristiano {
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 1359px) {
+    &.whitebeard {
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 1367px) {
+    &.boats {
+      margin-top: 0px;
+    }
+    &.lastofus {
+      margin-top: 0px;
+    }
+    &.whitebeard {
+      margin-top: 0px;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    &.boats {
+      margin-top: 20px;
+    }
+    &.whitebeard {
+      margin-top: 40px;
+      &.sidebar-is-full {
+        margin-top: 0px;
+      }
+    }
+    &.talkingtech {
+      margin-top: 58px;
+    }
+    &.jschanges {
+      margin-top: 58px;
+    }
+    &.cristiano {
+      margin-top: 30px;
+    }
+    &.machine {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 1248px) {
+    &.whitebeard {
+      margin-top: 57px;
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 1188px) {
+    &.lastofus {
+      margin-top: 20px;
+      &.sidebar-is-full {
+        margin-top: 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    &.boats {
+      margin-top: -20px;
+    }
+    &.lastofus {
+      margin-top: 30px;
+    }
+    &.whitebeard {
+      margin-top: 30px;
+    }
+    &.cristiano {
+      margin-top: 50px;
+    }
+  }
+  @media screen and (max-width: 1083px) {
+    &.jschanges {
+      margin-top: 38px;
+    }
+  }
+  @media screen and (max-width: 1101px) {
+    &.cristiano {
+      margin-top: 50px;
+      &.sidebar-is-full {
+        margin-top: 40px;
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    &.boats {
+      margin-top: 0px;
+      &.sidebar-is-full {
+        margin-top: -20px;
+      }
+    }
+    &.whitebeard {
+      &.sidebar-is-full {
+        margin-top: 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 1083px) {
+    &.jschanges {
+      &.sidebar-is-full {
+        margin-top: 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &.boats {
+      margin-top: 20px;
+      &.sidebar-is-full {
+        margin-top: 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 990px) {
+    &.machine {
+      margin-top: 50px;
+      &.sidebar-is-full {
+        margin-top: 40px;
+      }
+    }
+  }
+  @media screen and (max-width: 944px) {
+    &.jschanges {
+      margin-top: 58px;
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    &.talkingtech {
+      margin-top: 35px;
+    }
+    &.jschanges {
+      margin-top: 35px;
+    }
+  }
+  @media screen and (max-width: 880px) {
+    &.whitebeard {
+      margin-top: 48px;
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 839px) {
+    &.lastofus {
+      margin-top: 48px;
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    &.lastofus {
+      margin-top: 30px;
+      &.sidebar-is-full {
+        margin-top: 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 759px) {
+    &.lastofus {
+      margin-top: 48px;
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 701px) {
+    &.cristiano {
+      margin-top: 60px;
+    }
+    &.machine {
+      margin-top: 40px;
+      &.sidebar-is-full {
+        margin-top: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    &.Madridista {
+      margin-bottom: 40px;
+    }
+    &.machine {
+      margin-bottom: 40px;
+    }
+  } 
+}
+  
+ 
+
+ 
+
+.thumbnail {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  .thumbnail-image, .thumbnail-vid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s;
+    border-radius: 0.75rem; 
+  }
+
+  .duration {
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.125rem;
+    border-radius: 0.25rem;
+  }
+
+  .thumbnail-vid {
+    opacity: 0; 
+    transition: opacity 0.2s, border-radius 0.2s;
+  }
+  &:hover .thumbnail-vid {
+    opacity: 1;
+    border-radius: 0;
+  }
+}
+  
+.vid-info {
+  display: flex;
+  gap: 0.5rem;
+
+  .channel-tag {
+    flex-shrink: 0;
+    img {
+      width: 3rem; // 48px, for example
+      height: 3rem;
+      border-radius: 50%;
+    }
+  }
+
+  .vid-text {
+    display: flex;
+    flex-direction: column;
+
+    .vid-title, .channel-name {
+      text-decoration: none;
+      color: black;
+    }
+
+    .vid-title {
+      font-weight: bold;
+    }
+
+    .channel-name {
+      font-size: 0.875rem;
+      color: #666; // Example secondary text color
+    }
+
+    .vid-views-and-data {
+      font-size: 0.875rem;
+      color: #666;
+    }
+  }
+}
+

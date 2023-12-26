@@ -1,0 +1,57 @@
+.toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 22px;
+    background-color: #5a5a5a;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 13px;
+    z-index: 99;
+    .toggle-checkbox {
+      display: none;
+    }
+  
+    .toggle-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .round {
+      position: absolute; 
+      background-color: white;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      transition: transform 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2px;
+      left: 2px;
+      z-index: 2;
+  
+      .toggle-inner {
+        background: url('../../assets/sun.svg') center/cover no-repeat;
+        width: 80%;
+        height: 80%;
+        transition: background-image 0.2s;
+      }
+    }
+  
+    .toggle-checkbox:checked + .toggle-label .round {
+      transform: translateX(18px); 
+    }
+  
+    .toggle-checkbox:checked + .toggle-label .round .toggle-inner {
+      background: url('../../assets/moon.svg') center/cover no-repeat; 
+    }
+}

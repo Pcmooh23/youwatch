@@ -1,0 +1,57 @@
+.App {
+  .bottom-half {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    .feed-area {
+      margin-top: 65px;    
+      .feed {
+        margin-top: 70px;
+        overflow-y: auto;
+        height: 80vh;
+        display: grid;
+        position: relative;
+        gap: 1rem;
+        z-index: 15;
+        grid-template-columns: repeat(4, 1fr);
+        margin-right: 34px;
+        margin-left: 12px;
+        align-items: center;
+        justify-content: center;
+        bottom: 10px;
+        &.sidebar-is-full {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        @media screen and (max-width: 1300px) {
+          grid-template-columns: repeat(3, 1fr);
+          margin-left: 45px;
+        }
+        @media screen and (max-width: 1100px) {
+          grid-template-columns: repeat(2, 1fr);
+          &.sidebar-is-full {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media screen and (max-width: 700px) {
+          margin-left: 100px;
+          grid-template-columns: 1fr;
+          &.sidebar-is-full {
+            grid-template-columns: 1fr;
+          }
+        }
+        @media screen and (max-width: 650px) {
+          margin-left: 70px;
+        }
+        @media screen and (max-width: 600px) {
+          margin-left: 40px;
+        
+        }
+      }
+    }
+  }
+}
+
+body.dark-mode {
+  background-color: black; 
+  color: white;
+}
