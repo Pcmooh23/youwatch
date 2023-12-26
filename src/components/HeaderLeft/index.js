@@ -1,9 +1,9 @@
 import React from 'react';
-import './Header_left.scss';
+import './HeaderLeft.scss';
 import {Menu} from 'lucide-react';
 import logo from '../../assets/youtube.png';
 
-const Header_Left = ({isDark ,toggleFullbar, fullWidthSearch}) => {
+const HeaderLeft = ({isDark ,toggleFullbar, fullWidthSearch}) => {
   return (
     <div className={`left-section ${fullWidthSearch ? 'hide-section' : ''} ${isDark ? 'dark-mode' : ''}`}>
     <button className='menu-button'> 
@@ -17,4 +17,4 @@ const Header_Left = ({isDark ,toggleFullbar, fullWidthSearch}) => {
   )
 }
 
-export default Header_Left
+export default HeaderLeft

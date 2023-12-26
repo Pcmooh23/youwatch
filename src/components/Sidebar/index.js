@@ -3,7 +3,7 @@ import './Sidebar.scss';
 import LargeButtonLayout from '../LargeButtonLayout';
 import ThemeButton from '../ThemeButton';
 import {sidebar_mini, fullBarItems} from '../../data/data';
-import Header_Left from '../Header-left';
+import HeaderLeft from '../HeaderLeft';
 
 
 const Sidebar = ({className, isDark, changeColor, toggleFullbar, fullBar}) => {
@@ -36,7 +36,7 @@ const Sidebar = ({className, isDark, changeColor, toggleFullbar, fullBar}) => {
       {fullBar && <div onClick={toggleFullbar} className={`shadow-overlay`}/>}
       <aside className={`sidebar-full`}>
         <div className='sidebar-header'>
-            <Header_Left isDark={isDark} toggleFullbar={toggleFullbar}/>
+            <HeaderLeft isDark={isDark} toggleFullbar={toggleFullbar}/>
         </div>
         <div className='large-buttons'>
           <LargeButtonLayout title='' visibleItemCount={3} isDark={isDark}>
