@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/youwatch/static/css/main.6ef7c552.css",
+    "main.js": "/youwatch/static/js/main.692bcab2.js",
+    "static/media/golaso.webp": "/youwatch/static/media/golaso.1539cd28bef20e61a6cc.webp",
+    "static/media/mkbhd.webp": "/youwatch/static/media/mkbhd.bb942eddb573c986ed15.webp",
+    "static/media/last.webp": "/youwatch/static/media/last.9eb1975c22683248eb30.webp",
+    "static/media/ML_is_for_everyone.webp": "/youwatch/static/media/ML_is_for_everyone.310deb743a12ea351ab4.webp",
+    "static/media/goggins.webp": "/youwatch/static/media/goggins.fc00643d9f4a6b1b8a6e.webp",
+    "static/media/roger.webp": "/youwatch/static/media/roger.0eb169b4577056f8a752.webp",
+    "static/media/CR7.webp": "/youwatch/static/media/CR7.ae8c4e9f8e00417b4073.webp",
+    "static/media/beast.jpeg": "/youwatch/static/media/beast.b664e34a37eb1b223aa4.jpeg",
+    "static/media/golazo.jpeg": "/youwatch/static/media/golazo.32aea4c94a8765d91c2a.jpeg",
+    "static/media/coldplay.jpeg": "/youwatch/static/media/coldplay.b4102aae01ea961bb038.jpeg",
+    "static/media/mkbhd.jpeg": "/youwatch/static/media/mkbhd.2f1590cedbd59a60deb7.jpeg",
+    "static/media/nob.jpeg": "/youwatch/static/media/nob.68aac4dd8a5cf49a043e.jpeg",
+    "static/media/JS 2023.webp": "/youwatch/static/media/JS 2023.143cac6befd4edb56848.webp",
+    "static/media/you-kids.svg": "/youwatch/static/media/you-kids.52c06444064abd19fc651ca2cf3bb9f1.svg",
+    "static/media/sun.svg": "/youwatch/static/media/sun.43f9ac6671dc51ddf948.svg",
+    "static/media/red-circle.svg": "/youwatch/static/media/red-circle.68888464a8d6d760e3a7f186220dca8c.svg",
+    "static/media/you-tv.svg": "/youwatch/static/media/you-tv.5c0eb5a21a951eed737a8f772ea4a128.svg",
+    "static/media/prem.svg": "/youwatch/static/media/prem.25baa7bb370eadc586f70050ed6a933a.svg",
+    "static/media/hex.svg": "/youwatch/static/media/hex.805fb22eadf63ac5f053d5984048b7e8.svg",
+    "index.html": "/youwatch/index.html",
+    "static/media/moon.svg": "/youwatch/static/media/moon.98b4e129361dfde965ee.svg",
+    "main.6ef7c552.css.map": "/youwatch/static/css/main.6ef7c552.css.map",
+    "main.692bcab2.js.map": "/youwatch/static/js/main.692bcab2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ef7c552.css",
+    "static/js/main.692bcab2.js"
+  ]
+}
